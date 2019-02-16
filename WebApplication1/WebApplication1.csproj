@@ -1,0 +1,34 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Migrations\20190216113033_Initial.cs" />
+    <Compile Remove="Migrations\20190216113033_Initial.Designer.cs" />
+    <Compile Remove="Migrations\20190216113257_Initial.cs" />
+    <Compile Remove="Migrations\20190216113257_Initial.Designer.cs" />
+    <Compile Remove="Migrations\20190216114348_Initial.cs" />
+    <Compile Remove="Migrations\20190216114348_Initial.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="EntityFramework" Version="6.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.1.2" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="2.1.1">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Npgsql.EntityFramework" Version="2.2.7" />
+    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="2.1.1" />
+    <PackageReference Include="Npgsql" Version="4.0.1" />
+    <PackageReference Include="X.PagedList.Mvc.Core" Version="7.6.0" />
+  </ItemGroup>
+
+</Project>
